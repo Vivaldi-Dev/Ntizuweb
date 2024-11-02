@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-gradient {
+  background: linear-gradient(140deg, #006140 28.95%, #749C07 100%, rgba(116, 156, 7, 0.47) 98.86%);
+}
+
+.custom-shadow {
+  box-shadow: 3px 3px 8px #000;
+}
+
+.radio-custom {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #003E24;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-custom:checked {
+  background-color: #4CAF50; 
+  border-color: #4CAF50; 
+}
+
+.radio-custom:checked::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: "azonix";
+  src: url("/fonts/azonix/Azonix.otf");
+}
+
+/* Adicione isso ao seu CSS */
+input[type="checkbox"]:checked {
+  background-color: #060a0e;
+  border-color: #11171b;
+}
+
